@@ -8,6 +8,7 @@
 #include <vector>
 #include <algorithm>
 #include <functional>
+#include <numeric>
 
 /*!
 This class is used to perform calculation on given ConcreteSquareMatrix

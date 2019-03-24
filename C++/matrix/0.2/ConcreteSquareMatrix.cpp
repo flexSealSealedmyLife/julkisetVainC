@@ -152,8 +152,9 @@ ConcreteSquareMatrix& ConcreteSquareMatrix::operator*=(const ConcreteSquareMatri
            for(auto &row: elements) {
             std::vector<uniq_intelem_pointer> new_row;
             for (auto &trans_row: trans.elements ) {
-                uniq_intelem_pointer prod= std::inner_product(row.begin(), row.end(), trans_row.begin()
-                                                        ,uniq_intelem_pointer(new IntElement(0)),
+                uniq_intelem_pointer prod =
+                std::inner_product(row.begin(), row.end(), trans_row.begin(),
+                                                        uniq_intelem_pointer(new IntElement(0)),
                                                         [](const uniq_intelem_pointer &i1, const uniq_intelem_pointer &i2) {
                                                         uniq_intelem_pointer ptElem = uniq_intelem_pointer(new IntElement(i1->getVal()+i2->getVal()));
                                                         return ptElem;

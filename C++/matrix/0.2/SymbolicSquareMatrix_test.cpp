@@ -9,7 +9,7 @@
 
 TEST_CASE("SymbolicSquareMatrix checking", "[matrix]") {
 
-   SymbolicSquareMatrix valkyrie("[[x,4][y,4]]");
+    SymbolicSquareMatrix valkyrie("[[x,4][y,4]]");
     CHECK(valkyrie.toString()=="[[x,4][y,4]]");
     SymbolicSquareMatrix jackal("[[x,1,3][f,g,3][h,3,3]]");
     CHECK(jackal.toString()=="[[x,1,3][f,g,3][h,3,3]]");
